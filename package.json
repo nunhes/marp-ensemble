@@ -1,0 +1,25 @@
+{
+  "name": "to-marp",
+  "version": "1.0.0",
+  "description": "A colection of presentations using Marp and Markdown syntax",
+  "main": "index.js",
+  "keywords": [ marp, markdown, presentation ],
+  "author": "i.berndz",
+  "license": "ISC",
+  "devDependencies": {
+    "@marp-team/marp-cli": "^1.7.0"
+  },
+  "scripts": {
+    "build:html": "marp",
+    "build:pdf": "marp --pdf",
+    "preview": "marp --preview",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:html": "marp --watch"
+  },
+  "marp": {
+    "allowLocalFiles": true,
+    "html": true,
+    "inputDir": "slides",
+    "output": "public"
+  }
+}
